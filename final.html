@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BIO-DATA - Ramos</title>
+
+        <style>
+
+            fieldset{
+                width: 50%; 
+                margin: auto;
+                border: none;
+            }
+
+            #head{
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                font-weight: 900;
+            }
+
+            #photo-box{
+                border: 1px solid black; 
+                width: 100px; 
+                height: 100px;
+                position: absolute;
+                left: 1287px;
+                bottom: 830px;
+            }
+
+            #photo{
+                position: relative;
+                top: 40px;
+                left: 9px;
+                color: white;
+            }
+
+            .title-border{
+                font-family: Arial, Helvetica, sans-serif;
+                border: solid black; 
+                background-color: black; 
+                width: 1000px; 
+                border-radius: 5px;
+                margin: auto;
+                margin-top: 200px;
+                margin-top: 3px;
+            }
+
+            #first-title-border{
+                margin-top: 65px;
+            }
+
+            .title {
+                color: white;
+                margin: 0;
+            }
+
+            .tables{
+                border: 1px solid black;
+                border-radius: 5px;
+                width: 50%;
+                margin: auto;
+                margin-top: 3px;
+                width: 1000px;
+            }
+
+            #fifth-table{
+                border: 1px solid black;
+                border-radius: 5px;
+                width: 500px;
+                margin-top: 3px;
+            }
+
+            .input{
+                border: none; 
+                outline: none; 
+                background: transparent; 
+                border-bottom: 1px solid black;
+            }
+
+            #signature-container{
+                position: relative;
+                left: 400px;
+                bottom: 170px;
+            }
+
+            #signature{
+                width: 400px;
+            }
+
+            .fifteen{
+                width: 15%;
+            }
+
+            .fortyfive{
+                width: 45%;
+            }
+
+            .twentyfive{
+                width: 25%;
+            }
+
+            .thirtyfive{
+                width: 35%;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <fieldset>
+            <h1 id="head">BIO-DATA</h1>
+
+        <div>
+            <div id="photo-box">
+                <input id="photo" type="file" accept=".jpg">
+            </div>
+
+            <div class="title-border" id="first-title-border">
+                <p class="title" id="first-title"><b> PERSONAL DATA </b></p>
+            </div>
+
+            <div id="tables-container">
+                <table class="tables" id="first-table">
+                    <tr>
+                        <td class="fifteen">Position Desired</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="position-desired" type="text"></td>
+                        <td class="fifteen">Date</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="date" type="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Name</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="name" type="text"></td>
+                        <td class="fifteen">Gender</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="gender" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">City Address</td>
+                        <td colspan="3">:<input style="width: 98.5%;" class="input" id="city-address" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Provincial Address</td>
+                        <td colspan="3">:<input style="width: 98.5%;" class="input" id="provincial-address" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Telephone</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="telephone" type="tel"></td>
+                        <td class="fifteen">Cellphone</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="cellphone" type="tel"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">E-mail Address</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="email-address" type="email"></td>
+                        <td class="fifteen"></td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="none" type="email"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Date of Birth</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="date-of-birth" type="date"></td>
+                        <td class="fifteen">Birth of Place</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="birth-of-place" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Civil Status</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="civil-status" type="text"></td>
+                        <td class="fifteen">Citizenship</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="citizenship" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Height</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="height" type="number"></td>
+                        <td class="fifteen">Weight</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="weight" type="number"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Religion</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="religion" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Spouse</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="spouse" type="text"></td>
+                        <td class="fifteen">Occupation</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="occupation" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Name of Children</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="name-of-children" type="text"></td>
+                        <td class="fifteen">Date of Birth</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="date-of-birth" type="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen"></td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="name-of-children2" type="text"></td>
+                        <td class="fifteen"></td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="date-of-birth" type="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen"></td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="name-of-children3" type="text"></td>
+                        <td class="fifteen"></td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="date-of-birth" type="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Father's Name</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="spouse" type="text"></td>
+                        <td class="fifteen">Occupation</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="father's-occupation" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Mother's Name</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="spouse" type="text"></td>
+                        <td class="fifteen">Occupation</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="mother's-occupation" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4">Language or dialect spoken and written:
+                            <input style="width: 70.8%;" class="input" id="language-or-dialect-spoken-and-written" type="text">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4">Person to be contacted in case of emergency:
+                            <input style="width: 67.4%;" class="input" id="person-to-be-contacted-in-case-of-emergency" type="text">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4">His or her address and telephone:
+                            <input style="width: 75.5%;" class="input" id="his-or-her-address-and-telephone" type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="title-border" id="second-title-border">
+                <p class="title" id="second-title"><b> EDUCATIONAL BACKGROUND </b></p>
+            </div>
+
+            <div id="tables-container">
+                <table class="tables" id="second-table">
+                    <tr>
+                        <td class="fifteen">Elementary</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="elementary" type="text"></td>
+                        <td class="fifteen">Year Graduated</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="elementary-year-graduated" type="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">High School</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="highschool" type="text"></td>
+                        <td class="fifteen">Year Graduated</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="high-school-year-graduated" type="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">College</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="college" type="text"></td>
+                        <td class="fifteen">Year Graduated</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="college-year-graduated" type="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Degree Received</td>
+                        <td colspan="3">:<input style="width: 98.5%;" class="input" id="degree-received" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Special Skills</td>
+                        <td colspan="3">:<input style="width: 98.5%;" class="input" id="special-skills" type="text"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="title-border" id="third-title-border">
+                <p class="title" id="third-title"><b> EMPLOYMENT RECORD </b></p>
+            </div>
+
+            <div id="tables-container">
+                <table class="tables" id="third-table">
+                    <tr>
+                        <td class="fifteen">Company Name</td>
+                        <td colspan="5">:<input style="width: 98.5%;" class="input" id="company-name-1" type="text"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fifteen">Position</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="position-1" type="text"></td>
+                        <td style="width: 5%;">From</td>
+                        <td class="fifteen">:<input style="width: 91%;" class="input" id="from-1" type="text"></td>
+                        <td style="width: 5%;">To</td>
+                        <td class="fifteen">:<input style="width: 91%;" class="input" id="to-2" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="6"><br></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Company Name</td>
+                        <td colspan="5">:<input style="width: 98.5%;" class="input" id="company-name-2" type="text"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="fifteen">Position</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="position-2" type="text"></td>
+                        <td style="width: 5%;">From</td>
+                        <td class="fifteen">:<input style="width: 91%;" class="input" id="from-2" type="text"></td>
+                        <td style="width: 5%;">To</td>
+                        <td class="fifteen">:<input style="width: 91%;" class="input" id="to-2" type="text"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="title-border" id="fourth-title-border">
+                <p class="title" id="fourth-title"><b> CHARACTER REFERENCE</b></p>
+            </div>
+
+            <div id="tables-container">
+                <table class="tables" id="fourth-table">
+                    <tr>
+                        <td class="fifteen" style=>Name</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="name-2" type="text"></td>
+                        <td class="fifteen" style=>Company</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="company-1" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen" style=>Position</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="position-3" type="text"></td>
+                        <td class="fifteen" style=>Contact No.</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="contact-no-1" type="tel"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4"><br></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Name</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="name-3" type="text"></td>
+                        <td class="fifteen">Company</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="company-2" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Position</td>
+                        <td class="fortyfive">:<input style="width: 95%;" class="input" id="position-4" type="text"></td>
+                        <td class="fifteen">Contact No.</td>
+                        <td class="twentyfive">:<input style="width: 95%;" class="input" id="contact-no-2" type="tel"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="tables-container">
+                <table id="fifth-table">
+                    <tr>
+                        <td class="fifteen">Res. Cert. No.</td>
+                        <td class="thirtyfive">:<input style="width: 95%;" class="input" id="res-cert-no" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Issued at</td>
+                        <td class="thirtyfive">:<input style="width: 95%;" class="input" id="issued-at" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Issued on</td>
+                        <td class="thirtyfive">:<input style="width: 95%;" class="input" id="issued-on" type="date"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">SSS</td>
+                        <td class="thirtyfive">:<input style="width: 95%;" class="input" id="sss" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">TIN</td>
+                        <td class="thirtyfive">:<input style="width: 95%;" class="input" id="tin" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">NBI No.</td>
+                        <td class="thirtyfive">:<input style="width: 95%;" class="input" id="nbi-no" type="text"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="fifteen">Passport No.</td>
+                        <td class="thirtyfive">:<input style="width: 95%;" class="input" id="passport-no" type="text"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="signature-container">
+                <pre>                I here certify that the above information is true and correct 
+                to the best  of my  knowledge and belief. I  also  understand
+                that any  misinterpretation  will  be  considered  reason for 
+                withdrawal of an offer or subsequent  dissmissal if  employed.
+
+
+
+                    <input class="input" id="signature" type="text">
+                                     Applicant's Signature
+             </pre>
+            </div>
+        </div>
+        </fieldset>
+    </body>
+</html>
